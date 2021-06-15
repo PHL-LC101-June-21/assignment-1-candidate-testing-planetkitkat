@@ -5,7 +5,7 @@ const input = require('readline-sync');
 // TODO 2: modify your quiz app to ask 5 questions //
 
 // TODO 1.1a: Define candidateName // 
-let candidateName;
+let candidateName = "";
 
 
 
@@ -22,7 +22,7 @@ let candidateAnswers;
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-
+let candidateName = input.question("Please enter your name: ");
 }
 
 function askQuestion() {
@@ -45,6 +45,7 @@ function gradeQuiz(candidateAnswers) {
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
+  console.log("Hello, " + candidateName + "!");
   
   askQuestion();
   gradeQuiz(this.candidateAnswers);
