@@ -10,6 +10,7 @@ let candidateName;
 
 
 
+
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 let question;
 let correctAnswer;
